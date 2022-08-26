@@ -1,0 +1,20 @@
+# permissions for end users to view blogapps.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: blogapp-viewer-role
+rules:
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogapps
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogapps/status
+  verbs:
+  - get

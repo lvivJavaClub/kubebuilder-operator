@@ -1,0 +1,14 @@
+apiVersion: javaclub.lviv.ua/v1alpha1
+kind: BlogPost
+metadata:
+  name: another-blogpost
+spec:
+  blogAppName: blogapp-sample
+  name: Hydrogen
+  content: |
+    Hydrogen atoms worldlets the only home we've ever known vanquish the impossible ship of the imagination Cambrian explosion. 
+    Kindling the energy hidden in matter realm of the galaxies at the edge of forever cosmic ocean muse about trillion. 
+    Euclid courage of our questions are creatures of the cosmos cosmic ocean bits of moving fluff gathered by gravity? 
+    Paroxysm of global death with pretty stories for which there's little good evidence emerged into consciousness a 
+    mote of dust suspended in a sunbeam star stuff harvesting star light permanence of the stars and billions upon 
+    billions upon billions upon billions upon billions upon billions upon billions.

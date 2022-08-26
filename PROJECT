@@ -1,0 +1,26 @@
+domain: javaclub.lviv.ua
+layout:
+- go.kubebuilder.io/v3
+plugins:
+  manifests.sdk.operatorframework.io/v2: {}
+  scorecard.sdk.operatorframework.io/v2: {}
+projectName: blog-operator
+repo: github.com/lvivJavaClub/kubebuilder-operator
+resources:
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: javaclub.lviv.ua
+  kind: BlogApp
+  path: github.com/lvivJavaClub/kubebuilder-operator/api/v1alpha1
+  version: v1alpha1
+- api:
+    crdVersion: v1
+    namespaced: true
+  controller: true
+  domain: javaclub.lviv.ua
+  kind: BlogPost
+  path: github.com/lvivJavaClub/kubebuilder-operator/api/v1alpha1
+  version: v1alpha1
+version: "3"

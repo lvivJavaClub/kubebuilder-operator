@@ -1,0 +1,7 @@
+apiVersion: javaclub.lviv.ua/v1alpha1
+kind: BlogApp
+metadata:
+  name: blogapp-sample
+spec:
+  serviceType: LoadBalancer
+  size: 3Gi

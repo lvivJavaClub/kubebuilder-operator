@@ -1,0 +1,24 @@
+# permissions for end users to edit blogapps.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: blogapp-editor-role
+rules:
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogapps
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogapps/status
+  verbs:
+  - get

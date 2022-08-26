@@ -1,0 +1,59 @@
+---
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  creationTimestamp: null
+  name: manager-role
+rules:
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogapps
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogapps/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogapps/status
+  verbs:
+  - get
+  - patch
+  - update
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogposts
+  verbs:
+  - create
+  - delete
+  - get
+  - list
+  - patch
+  - update
+  - watch
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogposts/finalizers
+  verbs:
+  - update
+- apiGroups:
+  - javaclub.lviv.ua
+  resources:
+  - blogposts/status
+  verbs:
+  - get
+  - patch
+  - update

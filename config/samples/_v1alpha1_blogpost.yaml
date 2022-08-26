@@ -1,0 +1,15 @@
+apiVersion: javaclub.lviv.ua/v1alpha1
+kind: BlogPost
+metadata:
+  name: blogpost-sample
+spec:
+  blogAppName: blogapp-sample
+  name: Jean-François Champollion
+  content: |
+    Made in the interiors of collapsing stars hydrogen atoms as a patch of light Jean-François Champollion rich in 
+    heavy atoms star stuff harvesting star light. A mote of dust suspended in a sunbeam invent the universe 
+    Ut enim ad minima veniam at the edge of forever the only home we've ever known the only home we've ever known. 
+    Citizens of distant epochs a mote of dust suspended in a sunbeam Ut enim ad minima veniam courage of our questions 
+    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit Nemo enim ipsam voluptatem quia voluptas 
+    sit aspernatur aut odit aut fugit and billions upon billions upon billions upon billions upon billions upon 
+    billions upon billions.
